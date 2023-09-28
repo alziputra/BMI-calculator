@@ -7,3 +7,5 @@ BMI Categories:
 
 # Result
 ![image](https://github.com/alziputra/BMI-calculator/assets/88979001/171109cf-ec51-4c3f-a212-a46987efab49)
+
+Technical Project Assignment - BMI Calculator - Skilvul #Tech4Impact
