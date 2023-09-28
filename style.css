@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&family=Raleway:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url('https://cdn.pixabay.com/photo/2016/03/31/15/17/exercise-1293133_1280.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-container {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.form-container {
+    flex: 2;
+    padding: 50px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+h2,
+label,
+#result {
+    color: #fff;
+}
+
+.label {
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    background-color: #ededed;
+    border-radius: 5px;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    /* Agar tombol menyesuaikan lebar container */
+    width: 100%;
+    padding: 10px;
+    background-color: #6f8e95;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2b454f;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        /* Mengubah tata letak menjadi satu kolom */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .image-container,
+    .form-container {
+        flex: none;
+        /* Menghapus flex agar tetap diukur sesuai konten */
+        width: 100%;
+        /* Mengisi seluruh lebar container */
+        padding: 20px;
+        text-align: center;
+    }
+}
